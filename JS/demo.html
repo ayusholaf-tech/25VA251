@@ -29,9 +29,34 @@
         var myEmail=null;
         console.log(myName+"e-mail address is " +myEmail);
         console.log(typeof(myEmail));
-    
+        // Reference or Non-Primitive Data Value Types=====
+        //object {}-value are defined in paired  of key - value 
+        let myInfo={
+            name:"Ayush", 
+            age:19, 
+            mob:7701845527,
+            eMail:"ayusholaf@gmail.com",
+            isMarried:false,
+            address:null,
+            branch:"CSE",
+            section:18,
+        }
+        console.log(myInfo);
+        // to find the lenagth of object  
+        console.log(Object.keys(myInfo).length);
+        console.log(myInfo.branch);
+        // array - collection of any data type in JS
+        let studentDetails=["Ayush",
+        19,
+        false,
+        "ayusholaf@gmail.com",
+        "GZB"]
+        console.log(studentDetails[2]);
+        console.log(studentDetails.length);
 
-
+    for(i=0; i<studentDetails.length;i++){
+        console.log(studentDetails[i]);
+    }    
 
     </script>
 </body>

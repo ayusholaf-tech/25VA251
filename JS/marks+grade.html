@@ -1,27 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 <body>
-    <script>
-        //conditon statment 
-         let age=23;
-        if (age>=18){
-            console.log("valid age for voting ! ");
 
-        }
-        if(age>=18){
-            console.log("valid age");
-        }
-        else{
-            console.log("not valid age");
-        }
-        // switch case
+<h2>Student Result</h2>
 
-        let grade='A';
+<script>
+
+let marks = [78, 85, 90, 67, 88];
+let sum = 0;
+
+for(let i = 0; i < marks.length; i++){
+    sum += marks[i];
+}
+
+document.write("Marks: " + marks + "<br>");
+document.write("Total = " + sum);
+let grade='A';
         switch(grade){
             case 'A':result="First Division ";
             break;
@@ -52,5 +46,10 @@
             
 
         </script>
+</body>
+</html>
+
+</script>
+
 </body>
 </html>

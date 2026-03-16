@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your name" id="inputdata"/>
+    <h2 id="text">display name</h2>
+    <button ondblclick="changeColor()">click on me</button>
+
+    <script>
+        function changeColor(){
+            let inputValue=document.getElementByID("inputData").value;
+            let inputText=document.getElementById('text');
+            inputText.innerHTML=inputValue;
+            inputText.style.color="red";
+            //random color
+             
+           
+        }
+    </script>
+</body>
+</html>

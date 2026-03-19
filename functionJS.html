@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUNCTION IN JS</title>
+  </head>
+  <body>
+    <script>
+        /*
+           function demo() {
+              console.log("HEllo world");
+            }//
+            /*demo();
+            function cal(a, b) {
+              var num1 = a;
+              var num2 = b;
+              console.log("Addition of two number is" + (num1 + num2));
+            }
+            cal(3, 5);*/
+            //wih para
+            /*function sum(a,b=5){
+            var num1=a;
+            var num2=b;
+      var res1=num1+num2;
+      console.log("The sum of two number is :"+(res1));
+
+            }
+             function mul(a,b=8){
+            var num1=a;
+            var num2=b;
+      var res2=num1+num2;
+      console.log("The MUnltiplication is :"+(res2));
+             }
+              function div(a,b=6){
+            var num1=a;
+            var num2=b;
+      var res3=num1+num2;
+      console.log("The Div is :"+(res3));
+              }
+sum(3,5);
+mul(2,8);
+div(6,6);*/
+/*let deom1=function(){
+    console.log("HEllo ABES");
+}*/
+
+/*let demo1=()=>console.log("HEllo JAvA Script");
+demo1();*/
+
+
+//
+(function(){
+    console.log("IIFE IN JS");
+})();
+
+//call back function 
+
+//call back funnction inin synchronous 
+function addRes(callback){
+    var num1=5;
+    var num2=10;
+    var res=num1+num2;
+    callback(res)
+
+}
+function result(res){
+    console.log("Addition of two number is"+ res);
+
+}
+addRes(result);
+//callback functin in asynchronous using setimeout API
+function hello(){
+    document
+}
+
+
+
+    </script>
+  </body>
+</html>

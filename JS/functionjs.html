@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let myPromises = new Promise(function (resolve, reject) {
+        let age = 25;
+        if (age >= 18) {
+          resolve("valid age");
+        } else {
+          reject("wait for next year");
+        }
+      });
+      myPromises
+        .then((result) => console.log(result))
+        .catch((error) => console.log(error))
+        .finally(console.log("done"));
+
+      // asyncronous
+      async function userData() {
+        try {
+          let response = await fetch(
+            "https://jsonplaceholder.typicode.com/todos/1",
+          );
+          let responseData = await response.jason();
+          console.log(responseData);
+        } catch (error) {
+          console.log(error);
+        }
+      }
+    </script>
+  </body>
+</html>

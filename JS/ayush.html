@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function demo(){
+        //     console.log("Hello JS");
+        // }
+        // demo(); //calling function
+        // //function with parameter
+        // function demo1(text){
+        //     console.log("Hello" + text);
+        // }
+        // demo1("React");
+        // //function with default parameter
+        
+        // function add(a,b=22){
+        //     var num1=a;
+        //     var num2=b;
+        //     var res=num1+num2;
+        //     console.log("Addition of two number is" + res);
+        // }
+        // add(34);
+
+    //     //In JavaScript, synchronous programming executes tasks sequentially and blocks the main thread until each operation is complete, while asynchronous programming allows tasks to run independently in the background, which improves performance and application responsiveness.
+    //    function cal(){
+    //     function add(a,b){
+    //         console.log("addition is" + (a+b));
+    //     }
+    //     function sub(x,y){
+    //         console.log("substraction is" + (x-y));
+    //     }
+    //     function mul(p,q){
+    //         console.log("multiplication is" + (p*q));
+    //     }
+    //     add(1,2);
+    //     mul(2,2);
+    //     sub(4,3);
+    // }
+    // cal();
+
+    //anamyous function a function that does not have an identifier(name) associated with it
+    // let msg=function(){
+    //     console.log("hello abes");
+    // }
+    // msg();
+    // //short code for above function  i.e. arrow function 
+    // // let msg1=();
+
+    // //// arrow function with multiple line
+    // let msg2=(age)=>{
+    //     if(age>=18){
+    //         console.log("valid age");
+    //     }}
+    //     msg2(23);
+    
+    //     //call back function 
+    //     function cal(a,b,Callback){
+    //         var num1=a;
+    //         var num2=b;
+    //         var rel=num1+num2;
+    //       Callback(rel);
+    //     }
+    //     function display(){
+    //         console.log("resilt is" + rel);
+    //     }
+    //     cal(3,4,display);
+
+
+    //javascript promises- javascript promise were create to make a asynchronous javascript easier to use
+    //promises stages.....
+    //pending - operstion start (not finished)
+    //reject - operation failed
+    //fillfilled- operation complete 
+    let promise=new Promise(function(resolve ,reject){
+          let Myage=23;
+          if(Myage=18){
+            resolve("valid age")}
+            else{
+            reject("wait for next year");
+        }
+
+    });
+    promise.then(result=>console.log(result)).catch
+    (error=>console.log(error));
+       
+  </script>
+</body>
+</html>
